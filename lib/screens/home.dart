@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
-import '../constants.dart';
 import '../widgets/reusable_card.dart';
 
 class Home extends StatefulWidget {
@@ -51,7 +50,7 @@ class _HomeState extends State<Home> {
               ),
             ),
             SizedBox(
-              height: size.height * 0.05,
+              height: size.height * 0.001,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -65,9 +64,21 @@ class _HomeState extends State<Home> {
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                )
+                ),
               ],
             ),
+            Container(
+                height: size.height*0.2,
+                width: size.width * 0.88,
+                // padding: EdgeInsets.symmetric(horizontal: 20, vertical: 100),
+                decoration: BoxDecoration(
+                  color: Colors.blue[200],
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10),
+                      bottomLeft: Radius.circular(10),
+                      bottomRight: Radius.circular(10)),
+                )),
             SizedBox(
               height: size.height * 0.05,
             ),
@@ -90,7 +101,7 @@ class _HomeState extends State<Home> {
                     children: [
                       Expanded(
                           child: ReusableCard(
-                        cardColor: cardColor,
+                        cardColor: Colors.transparent,
                         cardIcon: Icons.balance,
                         label: "Airtime",
                         tap: () {
@@ -103,8 +114,8 @@ class _HomeState extends State<Home> {
                       )),
                       Expanded(
                           child: ReusableCard(
-                        cardColor: cardColor,
-                        cardIcon: Icons.auto_awesome,
+                        cardColor: Colors.transparent,
+                        cardIcon: Icons.signal_wifi_statusbar_null_outlined,
                         label: "Data",
                         tap: () {
                           // createAlert(context);
@@ -122,8 +133,8 @@ class _HomeState extends State<Home> {
                     children: [
                       Expanded(
                         child: ReusableCard(
-                          cardColor: cardColor,
-                          cardIcon: Icons.event,
+                          cardColor: Colors.transparent,
+                          cardIcon: Icons.record_voice_over,
                           label: "Voice Bundles",
                           tap: () {
                             // Navigator.pushAndRemoveUntil(
@@ -137,8 +148,8 @@ class _HomeState extends State<Home> {
                       ),
                       Expanded(
                           child: ReusableCard(
-                        cardColor: cardColor,
-                        cardIcon: Icons.health_and_safety_rounded,
+                        cardColor: Colors.transparent,
+                        cardIcon: Icons.people,
                         label: "Refer & Earn",
                         tap: () {
                           // Navigator.pushAndRemoveUntil(

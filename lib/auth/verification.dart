@@ -17,9 +17,9 @@ class _VerificationState extends State<Verification> {
     final formKey = GlobalKey<FormState>();
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.blue,
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue,
         toolbarHeight: 200,
         elevation: 0,
         centerTitle: true,
@@ -89,7 +89,7 @@ class _VerificationState extends State<Verification> {
                         ),
                         (route) => true);
                   },
-                  color: Colors.red,
+                  color: Colors.blue,
                   icon: Icons.arrow_forward,
                 ),
               ],

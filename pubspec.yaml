@@ -34,6 +34,7 @@ dependencies:
   flutter_zoom_drawer: ^3.0.2
   flutter_native_splash: 
   carousel_slider: ^4.1.1 
+  pretty_qr_code: ^2.0.2
 
 
   # The following adds the Cupertino Icons font to your application.

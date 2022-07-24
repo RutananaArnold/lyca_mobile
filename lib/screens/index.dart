@@ -2,10 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/config.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
+import 'package:lyca_mobile/screens/aboutus.dart';
 import 'package:lyca_mobile/screens/help_and_support.dart';
+import 'package:lyca_mobile/screens/scan_to_download.dart';
+import 'package:lyca_mobile/screens/terms_&_conditions.dart';
 import 'package:lyca_mobile/widgets/drawer_tile.dart';
 
 import 'home.dart';
+import 'settings.dart';
 
 class Index extends StatefulWidget {
   const Index({Key? key}) : super(key: key);
@@ -51,11 +55,11 @@ class _IndexState extends State<Index> {
   List<Widget> tabs = [
     Home(),
     Container(),
-    Container(),
-    Container(),
+    Settings(),
+    ScanToDownload(),
     const HelpAndSupport(),
-    Container(),
-    Container(),
+    TermsAndConditions(),
+    const AboutUs(),
     Container(),
   ];
 

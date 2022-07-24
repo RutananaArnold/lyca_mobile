@@ -17,9 +17,9 @@ class _LoginState extends State<Login> {
     final formKey = GlobalKey<FormState>();
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.blue,
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue,
         toolbarHeight: 200,
         elevation: 0,
         centerTitle: true,

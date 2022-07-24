@@ -31,6 +31,7 @@ class ReusableCard extends StatelessWidget {
                 width: size.width * 0.25,
                 decoration: BoxDecoration(
                     color: cardColor,
+                    border: Border.all(),
                     borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30),
@@ -46,7 +47,7 @@ class ReusableCard extends StatelessWidget {
                   child: Icon(
                     cardIcon,
                     size: size.height * 0.1,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
               ),
